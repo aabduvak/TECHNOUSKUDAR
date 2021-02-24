@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Myriad Pro', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+// libs
+@import 'libs/fonts';
+@import 'libs/normalise';
+
+//base
+@import 'bases/variables';
+
+// blocks
+@import 'blocks/title';
+@import 'blocks/btn';
+@import 'blocks/promo';

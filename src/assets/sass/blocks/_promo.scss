@@ -1,0 +1,105 @@
+.promo {
+    background: url('../img/promo_bg.jpg') center center / cover no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+    &__logo img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 140px;
+    }
+    &__title {
+        color: #fff;
+        font-size: 52px;
+        margin-top: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        text-transform: capitalize;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 44px;   
+    }
+    &__descr {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__user {
+        display: block;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    &__count {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 48px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__text {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .languages {
+        display: flex;
+        position: absolute;
+        right: 14px;
+        top: 30px;
+        &__item img {
+            margin-right: 20px;
+            width: 24px;
+            height: 14px;
+        }
+    }
+    .header {
+        padding-top: 35px;
+        display: flex;
+        align-items: center;
+        &__menu {
+            display: flex;
+            margin-right: 32px;
+        }
+        &__img {
+            height: auto;
+            width: 28px;
+        }
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        &__social {
+            margin-right: 32px;
+        }
+        &__link {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
+            &:last-child {
+                border-right: 1px solid rgba(255, 255, 255, 0.349);
+            }
+            a {
+                text-transform: capitalize;
+                margin-right: 32px;
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    text-decoration: none;
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
