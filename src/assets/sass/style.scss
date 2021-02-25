@@ -17,6 +17,7 @@
 // libs
 @import 'libs/fonts';
 @import 'libs/normalise';
+@import 'libs/animate';
 
 //base
 @import 'bases/variables';
@@ -26,3 +27,6 @@
 @import 'blocks/btn';
 @import 'blocks/promo';
 @import 'blocks/main';
+@import 'blocks/content';
+
+@import 'blocks/media';

@@ -1,11 +1,13 @@
 .btn {
     color: #fff;
-    width: 170px;
-    height: 53px;
+    // width: 170px;
+    // height: 53px;
+    padding: 18px 20px;
     background-color: $btn-color;
     // box-shadow: inset 0px -3px 0px 0px #1f4549;
     border-radius: 3px;
     font-family: 'Myriad Pro',sans-serif;
+    text-transform: uppercase;
     border: none;
     display: block;
     margin: 0 auto;

@@ -1,4 +1,4 @@
-class VideoPlayer {
+export default class VideoPlayer {
     constructor(triggers, overlay) {
         this.btns = document.querySelectorAll(triggers);
         this.overlay = document.querySelector(overlay);
@@ -93,11 +93,3 @@ class VideoPlayer {
         }
     }
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-
-    new VideoPlayer('.play', '.overlay').init();
-
-    
-
-});
