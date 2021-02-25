@@ -91,6 +91,7 @@
                 border-right: 1px solid rgba(255, 255, 255, 0.349);
             }
             a {
+                transition: all 600ms;
                 text-transform: capitalize;
                 margin-right: 32px;
                 text-decoration: none;
