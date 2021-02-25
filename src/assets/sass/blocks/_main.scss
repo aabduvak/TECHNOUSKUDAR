@@ -1,0 +1,50 @@
+.main {
+    height: 500px;
+    padding-top: 200px;
+    background: url('../img/main_bg.jpg') center center / cover no-repeat;
+    &__link {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: #084346;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    &__img {
+        display: block;
+        // transform: translateY(-50%);
+    }
+
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+    .video {
+        width: 720px;
+        height: 480px;
+        position: relative;
+    }
+    .close {
+        color: #fff;
+        font-size: 36px;
+        position: absolute;
+        top: -27px;
+        right: -25px;
+        cursor: pointer;
+    }
+}
+
+.modal-open {
+    overflow: hidden;
+}

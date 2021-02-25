@@ -46,7 +46,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src("src/assets/js/**/*.js")
+    return gulp.src("src/assets/js/script.js")
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest("dist/assets/js"))
