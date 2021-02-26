@@ -1,20 +1,26 @@
 export default class Menu {
     constructor(trigger, selector, close, overlay) {
-        this.selector = document.querySelector(selector);
-        this.trigger = document.querySelector(trigger);
-        this.overlay = document.querySelector(overlay);
-        this.close = document.querySelector(close);
-        this.scroll = this.calcScroll();
+        try {
+            this.selector = document.querySelector(selector);
+            this.trigger = document.querySelector(trigger);
+            this.overlay = document.querySelector(overlay);
+            this.close = document.querySelector(close);
+            this.scroll = this.calcScroll();
+        }catch(e){}
     }
 
     addClasses() {
+        console.log(this.selector);
+        console.log(this.trigger);
+        console.log(this.close);
+        console.log(this.overlay);
         this.selector.classList.add('animate__animated');
     }
 
     btnTriggerBind(selector, trigger) {
         trigger.addEventListener('click', () => {
             document.body.classList.add('modal-open');
-            document.body.style.marginRight = `${this.scroll}px`;
+            // document.body.style.marginRight = `${this.scroll}px`;
             selector.style.visibility = 'unset';
             selector.style.opacity = '1';
             selector.style.left = '0';

@@ -46,6 +46,28 @@
             width: 600px;
         }
     }
+    .other-header {
+        // padding-top: 20px;
+        &__link {
+            font-size: 12px;
+            a {
+                margin-right: 20px;
+            }
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__title {
+            font-size: 38px;
+        }
+        &__wrapper {
+            grid-template-columns: 600px 1fr;
+            margin-top: 50px;
+        }
+        &__img {
+            width: 600px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -68,6 +90,47 @@
         }
         .menu {
             top: 0;
+        }
+    }
+    .other-header {
+        .hamburger {
+            display: flex;
+            top: 48px;
+        }
+        .languages {
+            display: none;
+        }
+        .menu {
+            top: 0;
+        }
+        &__menu, &__wrapper {
+            display: none;
+        }
+        &__logo {
+            margin-right: 10px;
+            width: 80px;
+            height: 80px;
+        }
+        &__flag, &__title {
+            display: block;
+            color: #fff;
+        }
+        &__title {
+            line-height: 30px;
+            margin-right: 10px;
+            font-size: 20px;
+            text-align: left;
+        }
+        &__flag {
+            margin-right: 0;
+            width: 50px;
+            height: 40px;
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
     .main {
@@ -107,6 +170,27 @@
         }
         &__descr {
             width: 500px;
+        }
+    }
+    .about {
+        padding-top: 30px;
+        &__title {
+            font-size: 32px;
+        }
+        &__wrapper {
+            grid-template-columns: 400px 1fr;
+        }
+        &__img {
+            width: 400px;
+        }
+        &__item {
+            &-text {
+                font-size: 12px;
+                line-height: 24px;
+            }
+            &-title {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -157,25 +241,34 @@
             padding-top: 35px;
         }
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            margin: 0 auto;       
+        }
+        &__item {
+            margin-top: 15px;
+            &-title {
+                text-align: center;
+                font-size: 20px;
+            }
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 576px) {
     .container {
-        max-width: 100%;
+        width: 100%;
+        // margin: 0;
         padding: 0 15px;
     }
-    .promo {
-        padding-top: 80px;
-        &__title {
-            font-size: 30px;
-        }
-        &__subtitle {
-            font-size: 26px;
-        }
-        &__logo img {
-            width: 150px;
-            height: 150px;
-        }
+    .promo, .other-header {
         .menu {
             &__block {
                 width: 100%;
@@ -192,8 +285,23 @@
                 }
             }
         }
+    }
+    .promo {
+        padding-top: 80px;
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 26px;
+        }
+        &__logo img {
+            width: 150px;
+            height: 150px;
+        }
+        
         
     }
+    
     .main {
         background: url(../img/main_bg.jpg) 85% center/cover no-repeat;
     }
@@ -240,7 +348,45 @@
             margin-bottom: 25px;
         }
     }
+    .about {
+        &__img {
+            width: 280px
+        }
+    }
+    
 }
+
+@media (max-width: 430px) {
+    .other-header {
+        height: 110px;
+        &__logo {
+            // position: absolute;
+            // left: 25px;
+            width: 80px;
+            height: 80px;
+        }
+        &__title {
+            // position: absolute;
+            // left: 70px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .hamburger {
+            top: 45px;
+            right: 15px;
+        }
+        
+    }
+}
+
+@media (max-width: 370px) {
+    .other-header {
+        &__flag {
+            display: none;
+        }
+    }
+} 
 
 
 

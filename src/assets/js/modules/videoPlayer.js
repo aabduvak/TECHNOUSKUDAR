@@ -1,9 +1,11 @@
 export default class VideoPlayer {
     constructor(triggers, overlay) {
-        this.btns = document.querySelectorAll(triggers);
-        this.overlay = document.querySelector(overlay);
-        this.close = this.overlay.querySelector('.close');
-        this.scroll = this.calcScroll();
+        try {
+            this.btns = document.querySelectorAll(triggers);
+            this.overlay = document.querySelector(overlay);
+            this.close = this.overlay.querySelector('.close');
+            this.scroll = this.calcScroll();
+        }catch(e){}
     }
     closeModal () {
         // selector.style.display = 'none';
