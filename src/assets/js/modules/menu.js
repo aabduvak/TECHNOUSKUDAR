@@ -20,7 +20,7 @@ export default class Menu {
     btnTriggerBind(selector, trigger) {
         trigger.addEventListener('click', () => {
             document.body.classList.add('modal-open');
-            // document.body.style.marginRight = `${this.scroll}px`;
+            document.body.style.marginRight = `${this.scroll}px`;
             selector.style.visibility = 'unset';
             selector.style.opacity = '1';
             selector.style.left = '0';
