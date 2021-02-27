@@ -1,5 +1,6 @@
 import VideoPlayer from './modules/videoPlayer';
 import Menu from './modules/menu';
+import Forms from './modules/forms';
 
 window.addEventListener("DOMContentLoaded", () => {
     try {
@@ -10,5 +11,8 @@ window.addEventListener("DOMContentLoaded", () => {
         new Menu('.promo .hamburger', '.promo .menu', '.promo .menu__close', '.promo .menu__overlay').init();
     } else {
         new Menu('.other-header .hamburger', '.other-header .menu', '.other-header .menu__close', '.other-header .menu__overlay').init();
+        new Forms().init();
     }
+
+
 });

@@ -10,10 +10,6 @@ export default class Menu {
     }
 
     addClasses() {
-        console.log(this.selector);
-        console.log(this.trigger);
-        console.log(this.close);
-        console.log(this.overlay);
         this.selector.classList.add('animate__animated');
     }
 

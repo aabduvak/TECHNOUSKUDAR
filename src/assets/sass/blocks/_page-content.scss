@@ -1,0 +1,88 @@
+.page-content {
+    background-color: #f1f1f1;;
+    padding-top: 54px;
+    &__title {
+        font-size: 48px;
+    }
+    &__search {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 500px;
+        height: 53px;
+        border: 0.6px solid #c4c4c4;
+        // box-shadow: inset 0px -3px 0px 0px #1f4549;
+        border-radius: 3px;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        color: $content-subtitle-color;
+        background-color: #dbd8cd;
+        padding: 0 50px 0 20px;
+        display: block;
+        box-shadow: inset 0px -3px 0px 0px #1f4549;
+        &-img {
+            display: block;
+            position: absolute;
+            background-color: $form-bg-color;
+            border: none;
+            top: 15px;
+            right: 29%;
+            img {
+                cursor: pointer
+            }
+        }
+    }
+    &__wrapper {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 800px;
+        margin-top: 55px;
+        gap: 90px;
+    }
+    &__item {
+        margin: 0 auto;
+    }
+    &__descr {
+        background-color: #fff;
+        padding: 21px 27px 25px 38px;
+        box-shadow: inset 0px -3px 0px 0px #1f4549;
+    }
+    &__img {
+        transition: all 600ms;
+        width: 800px;
+        height: 400px;
+        margin: 0 auto;
+        display: block;
+        &:hover {
+            // filter: hue-rotate(90deg);
+            filter: opacity(80%);
+            transform: scale(0.97);
+        }
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__subtitle {
+        font-family: 'Bahnschrift', sans-serif;
+        font-size: 30px;
+        line-height: 28px;
+        font-weight: 700;
+        color: $content-subtitle-color;
+        text-align: left;
+    }
+    &__text {
+        margin-top: 22px;
+        font-family: 'Bahnschrift', sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: $content-subtitle-color;
+    }
+    &__btn {
+        margin: 0 0 0 auto;
+        margin-top: 35px;
+    }
+}

@@ -14,6 +14,10 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: #f1f1f1;
+}
+
 // libs
 @import 'libs/fonts';
 @import 'libs/normalise';
@@ -32,5 +36,15 @@
 @import 'blocks/other-header';
 @import 'blocks/about';
 @import 'blocks/team';
+@import 'blocks/page-content';
+@import 'blocks/contacts';
 
 @import 'blocks/media';
+
+.status {
+    text-align: center;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
