@@ -56,7 +56,7 @@ gulp.task("build-js", () => {
 });
 
 gulp.task("build-prod-js", () => {
-    return gulp.src("src/assets/js/script.js")
+    return gulp.src("src/assets/js/main.js")
                 .pipe(webpack({
                     mode: 'production',
                     output: {
@@ -80,7 +80,7 @@ gulp.task("build-prod-js", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest(dist));
+                .pipe(gulp.dest('./dist/assets/js/'));
 });
 
 gulp.task('styles', function() {

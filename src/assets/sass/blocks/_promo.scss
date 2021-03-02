@@ -130,7 +130,7 @@
     .menu {
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         visibility:hidden;
         opacity: 0;
         z-index: 8;
@@ -144,7 +144,7 @@
         &__block {
             position: relative;
             width: 345px;
-            height: 100vh;
+            height: 100%;
             background-color: $btn-color;
             padding-top: 100px;
             padding-left: 40px;
