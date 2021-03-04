@@ -52,7 +52,7 @@
         text-transform: uppercase;
         color: #ffffff;
     }
-    .languages {
+    .languages, .country-selector{
         display: flex;
         position: absolute;
         right: 14px;
@@ -67,6 +67,7 @@
         padding-top: 35px;
         display: flex;
         align-items: center;
+        justify-content: center;
         &__menu {
             display: flex;
             margin-right: 32px;
@@ -207,7 +208,7 @@
             height: 100%;
             background-color: rgba(58, 58, 58, 0.5);;
         }
-        &__lang {
+        &__lang, .country-selector {
             padding-bottom: 50px;
             display: flex;
             justify-content: center;

@@ -9,9 +9,6 @@ export default class Forms {
             loading: 'Yükleniyor...',
             success: 'Teşekkürler! Biz sizinle iletişime geçeceğiz...',
             error: 'Bir hata oluştu...',
-            spinner: 'assets/icons/spinner.gif',
-            ok: 'assets/icons/ok.png',
-            fail: 'assets/icons/fail.png'
         }
     }
     
@@ -41,11 +38,6 @@ export default class Forms {
                     item.style.display = 'none';
                 }, 400);
 
-                let statusImg = document.createElement('img');
-                statusImg.setAttribute('src', this.message.spinner);
-                statusImg.classList.add('animate__animated', 'animate__fadeInUp');
-                statusMessage.appendChild(statusImg);
-
                 let textMessage = document.createElement('div');
                 textMessage.textContent = this.message.loading;
                 statusMessage.appendChild(textMessage);
@@ -56,13 +48,10 @@ export default class Forms {
 
                 postData(api, formData)
                     .then(res => {
-                        console.log(res);
-                        statusImg.setAttribute('src', this.message.ok);
                         textMessage.textContent = this.message.success;
                     })
                     .catch(() => {
                         textMessage.textContent = this.message.error;
-                        statusImg.setAttribute('src', this.message.fail);
                     })
                     .finally(() => {
                         clearInputs();

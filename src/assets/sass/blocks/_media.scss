@@ -110,7 +110,7 @@
         .hamburger {
             display: flex;
         }
-        .languages {
+        .languages, .country-selector {
             display: none;
         }
         .menu {
@@ -122,7 +122,7 @@
             display: flex;
             top: 48px;
         }
-        .languages {
+        .languages, .country-selector {
             display: none;
         }
         .menu {
