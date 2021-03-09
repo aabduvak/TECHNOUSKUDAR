@@ -1,6 +1,7 @@
 import VideoPlayer from './modules/videoPlayer';
 import Menu from './modules/menu';
 import Forms from './modules/forms';
+import Sliders from './modules/slider';
 
 window.addEventListener("DOMContentLoaded", () => {
     try {
@@ -13,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
         new Menu('.other-header .hamburger', '.other-header .menu', '.other-header .menu__close', '.other-header .menu__overlay').init();
         new Forms().init();
+        new Sliders('.techpost__item').init();
     }
 
 

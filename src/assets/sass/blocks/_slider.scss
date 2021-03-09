@@ -1,0 +1,21 @@
+.techpost {
+    &__wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 20px;
+        width: 250px;
+        height: 250px;
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
