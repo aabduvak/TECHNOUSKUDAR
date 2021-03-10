@@ -34,6 +34,7 @@
     "not dead"
   ],
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "gulp-jsmin": "^0.1.5"
   }
 }
