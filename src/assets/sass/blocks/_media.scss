@@ -16,7 +16,6 @@
 
     }
     .main {
-        background: url(../img/main_bg.jpg) 35% center/cover no-repeat;
         &__link {
             background-color: #0843468c;
         }
@@ -152,9 +151,6 @@
             text-align: left;
         }
     }
-    .main {
-        background: url(../img/main_bg.jpg) 20% center/cover no-repeat;
-    }
     .overlay {
         .video {
             width: 580px;
@@ -236,9 +232,6 @@
 @media (max-width: 768px) {
     .container {
         max-width: 540px
-    }
-    .main {
-        background: url(../img/main_bg.jpg) 15% center/cover no-repeat;
     }
     .overlay {
         .video {
@@ -367,9 +360,6 @@
             width: 150px;
             height: 150px;
         }
-    }
-    .main {
-        background: url(../img/main_bg.jpg) 85% center/cover no-repeat;
     }
     .overlay {
         .close {
