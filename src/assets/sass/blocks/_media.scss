@@ -15,11 +15,6 @@
         }
 
     }
-    .main {
-        &__link {
-            background-color: #0843468c;
-        }
-    }
     .content {
         &__wrapper {
             grid-template-columns: repeat(3,270px);
@@ -216,7 +211,7 @@
         }
         
     }
-    .page-content, .team, .about {
+    .page-content, .team, .about, .sponsors {
         padding-top: 30px;
         &__title {
             font-size: 32px;
@@ -225,6 +220,21 @@
     .page-content {
         &__wrapper {
             grid-template-columns: repeat(2,270px);
+        }
+    }
+
+    .sponsors {
+        &__wrapper {
+            grid-template-columns: repeat(2, 250px);
+            justify-content: space-between;
+        }
+        &__item {
+            transform: none;
+            opacity: 1;
+            filter: blur(0);
+            &:hover {
+                transform: none;
+            }
         }
     }
 }
@@ -444,6 +454,13 @@
             width: 90%;
             height: 220px;
             padding: 15px;
+        }
+    }
+    .sponsors {
+        &__wrapper {
+            grid-template-columns: 200px;
+            grid-template-rows: 200px;
+            gap: 10px;
         }
     }
 }
