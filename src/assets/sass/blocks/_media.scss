@@ -226,7 +226,6 @@
     .sponsors {
         &__wrapper {
             grid-template-columns: repeat(2, 250px);
-            justify-content: space-between;
         }
         &__item {
             transform: none;
