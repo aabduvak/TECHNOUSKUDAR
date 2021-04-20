@@ -1,3 +1,12 @@
+@media (max-width: 1300px) {
+    .main {
+        background: url('../img/1200.jpg') center center/cover no-repeat;
+        &__link {
+            transform: translateX(-86px);
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -117,6 +126,12 @@
         }
         .menu {
             top: 0;
+        }
+    }
+    .main {
+        background: url('../img/991.jpg') center center/cover no-repeat;
+        &__link {
+            transform: translateX(14px) translateY(-2px);
         }
     }
     .other-header {
@@ -242,6 +257,12 @@
     .container {
         max-width: 540px
     }
+    .main {
+        background: url('../img/768.jpg') center center/cover no-repeat;
+        &__link {
+            transform: translateX(13px) translateY(3px);
+        }
+    }
     .overlay {
         .video {
             width: 400px;
@@ -338,6 +359,12 @@
         width: 100%;
         // margin: 0;
         padding: 0 15px;
+    }
+    .main {
+        background: url('../img/576.jpg') center center/cover no-repeat;
+        &__link {
+            transform: translateX(43px) translateY(2px);
+        }
     }
     .promo, .other-header {
         .menu {
