@@ -1,6 +1,8 @@
 .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 500px;
-    padding-top: 200px;
     background: url('../img/main_bg.jpg') center center / cover no-repeat;
     &__link {
         position: relative;

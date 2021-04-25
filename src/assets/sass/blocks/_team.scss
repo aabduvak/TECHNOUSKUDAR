@@ -7,12 +7,15 @@
         // justify-content: center;
         margin-top: 100px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 250px);
+        justify-content: center;
         // grid-template-rows: minmax(320px);
         // grid-auto-rows: minmax(320px);
-        gap: 80px;
+        gap: 40px;
     }
     &__item {
+        min-height: 330px;
+        width: 250px;
         &-img {
             width: 215px;
             height: 215px;
@@ -24,6 +27,13 @@
                 object-fit: cover;
                 border-radius: 50%;
             }
+        }
+        &-link {
+            display: block;
+            margin-top: 7px;
+            text-align: center;
+            font-size: 13px;
+            color: $content-subtitle-color;
         }
         &-title, &-subtitle {
             text-align: center;
